@@ -70,6 +70,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: #FDFDFD;
 }
 
 a {
@@ -78,13 +79,13 @@ a {
 }
 
 time {
-    color: gray;
+    color: #2B2A33;
     margin-left: 1rem;
     min-width: 5rem;
 }
 
 #wrapper {
-    background-color: #FAFAFA;
+    background-color: #2B2A33; /* gray blue */
     display: flex;
     flex-direction: column;
     font-family: 'Latin Modern Roman', 'Times New Roman', serif;
@@ -94,7 +95,7 @@ time {
 }
 
 .link {
-    color: #AA0000;
+    color: #5CC9F5;
     text-decoration: underline;
 }
 
