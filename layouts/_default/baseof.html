@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <!-- author -->
-  <meta name="author" content="{{ .Site.Author.name }}">
+  <meta name="author" content="{{ .Site.Params.author.name }}">
 
   <!-- description -->
   {{ if .Description }}
@@ -83,7 +83,9 @@
   {{ end }}
 
   <!-- google analytics -->
-  {{ template "_internal/google_analytics_async.html" . }}
+  {{ if .Site.Config.Services.GoogleAnalytics.ID }}
+  {{ template "_internal/google_analytics.html" . }}
+  {{ end }}
 
 </body>
 
